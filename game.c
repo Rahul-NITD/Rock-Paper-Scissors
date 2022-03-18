@@ -13,7 +13,7 @@ int main()
 
 		srand(time(0));
 		int decision = rand() % 3;
-		printf("\n\n\nGet Ready.\n");
+		printf("Get Ready.\n");
 		Sleep(800);
 		for (int i = 3; i >= 1; i--)
 		{
@@ -21,11 +21,11 @@ int main()
 			Sleep(500);
 		}
 		if (decision == ROCK)
-			printf("ROCK\n");
+			printf("    _______\n---'   ____)\n      (_____)\n      (_____)\n      (____)\n---.__(___) \n");
 		if (decision == PAPER)
-			printf("PAPER\n");
+			printf("    _______\n---'   ____)____\n          ______)\n          _______)\n         _______)\n---.__________) \n");
 		if (decision == SCISSORS)
-			printf("SCISSORS\n");
+			printf("    _______\n---'   ____)____\n          ______) \n       __________) \n      (____)\n---.__(___) \n");
 	
 		printf("\nPress Enter to continue to play. Enter any other character to quit.\nYour Choice : ");
 		if (getc(stdin) != 10)
